@@ -5,39 +5,39 @@
 
 const numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function sumFor(nums){
+function sumFor(nums) {
   let total = 0;
-  for (const num of nums){
+  for (const num of nums) {
     total += num;
   }
   return total;
 }
 
-console.log("For Loop : " + sumFor(numList));
+console.log('For Loop : ' + sumFor(numList));
 
-function sumWhile(nums){
+function sumWhile(nums) {
   let total = 0;
   let i = 0;
-  while(i<nums.length){
+  while (i<nums.length) {
     total += nums[i];
     i++;
   }
   return total;
 }
 
-console.log("While Loop : " + sumWhile(numList));
+console.log('While Loop : ' + sumWhile(numList));
 
-function sumRecur(nums){
-  if (nums.length===0){
+function sumRecur(nums) {
+  if (nums.length===0) {
     return 0;
   }
   return nums[0] + sumRecur(nums.slice(1, nums.length));
 }
 
-console.log("Recursive Loop: " + sumRecur(numList));
+console.log('Recursive Loop: ' + sumRecur(numList));
 
-function sumUnderscore(nums){
-  return _.reduce(nums, function memoizer(memo, num){return memo + num});
+function sumUnderscore(nums) {
+  return _.reduce(nums, function memory(memo, num) { return memo + num; });
 }
 
-console.log("Underscore : " + sumUnderscore(numList));
+console.log('Underscore : ' + sumUnderscore(numList));
