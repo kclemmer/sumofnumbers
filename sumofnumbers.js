@@ -1,6 +1,6 @@
 /**
  * Solving Experience E26
- * Created by ijnek on 2/5/2017.
+ * Created by Kenji Clemmer on 2/5/2017.
  */
 
 const numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -28,7 +28,7 @@ function sumWhile(nums) {
 console.log('While Loop : ' + sumWhile(numList));
 
 function sumRecur(nums) {
-  if (nums.length===0) {
+  if (nums.length === 0) {
     return 0;
   }
   return nums[0] + sumRecur(nums.slice(1, nums.length));
@@ -41,3 +41,5 @@ function sumUnderscore(nums) {
 }
 
 console.log('Underscore : ' + sumUnderscore(numList));
+
+// 48m 10.1s
